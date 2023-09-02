@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.container{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    box-shadow: 2px 2px 1px 1px red,-2px -2px red;
+
+}
+.boxs{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+
+}
+#player-status{
+    color: white;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px;
+}
+.bling{
+    background-color: blue;
+    animation: bling 2s infinite ease;
+}
+@keyframes bling{
+     0%{
+        background-color: antiquewhite;
+     }
+     100%{
+        background-color: blueviolet;
+     }
+}
