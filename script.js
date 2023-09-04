@@ -6,7 +6,7 @@ const x='<image src="/x.png" width=50% height=50%>';
 const o='<image src="/o.png" width=50% height=50%>';
 let win=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 let option=['','','','','','','','','']
-let currentplayer=x;
+let currentplayer="X";
 let player="x";
 let running=false;
 
@@ -33,7 +33,7 @@ function updatebox(box,index){
 }
 function changeplayer(){
     player=(player=="x")?"o":"x";
-    currentplayer=(currentplayer==x)? o: x;
+    currentplayer=(currentplayer=="X")? "O": "X";
     playerstatus.textContent=player+' your turn'
 
 }
@@ -61,7 +61,7 @@ function checkwinner(){
 
     }
     else if(!option.includes("")){
-        playerstatus.textContent=`game over`
+        playerstatus.textContent=`MATCH DRAW`
         running=false
     
     }
