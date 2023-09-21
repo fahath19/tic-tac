@@ -77,7 +77,7 @@ function reset(){
     let running=false;
     playerstatus.textContent=`${player} your turn`;
     arry.forEach(box=>
-        {box.innerHTML=""
+        {box.innerText=""
         box.classList.remove('bling')
     })
 }
